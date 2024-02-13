@@ -167,6 +167,37 @@ section {
   color: #ffffff;
 }
 
+/* About Us Specific Styles */
+.about-us .text-container,
+.contact-us .text-container,
+.join-national .text-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-us h2,
+.contact-us h2,
+.join-national h2 {
+  color: #c5050c;
+}
+
+.about-us p,
+.contact-us p,
+.join-national p {
+  line-height: 1.5;
+}
+
+.contact-us a,
+.join-national a {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+
+.contact-us a:hover,
+.join-national a:hover {
+  color: #6ea1f4;
+}
+
 /* MailChimp Form */
 #mc_embed_signup {
   background: #fff;
