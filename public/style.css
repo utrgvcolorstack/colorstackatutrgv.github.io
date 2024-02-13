@@ -146,11 +146,16 @@ section {
   margin-bottom: 0.5em;
 }
 
+.centered-button-container {
+  text-align: center;
+}
+
 .btn-member {
   display: inline-block;
   background-color: #c5050c;
   color: white;
   padding: 10px 20px;
+  margin: 20px 0px;
   text-decoration: none;
   border-radius: 12px;
   transition: background-color 0.3s, color 0.3s;
@@ -160,15 +165,6 @@ section {
 .btn-member:hover {
   background-color: #e57373;
   color: #ffffff;
-}
-
-.community-link {
-  color: #7289da;
-  text-decoration: none;
-}
-
-.community-link:hover {
-  color: #8a9fe9;
 }
 
 /* MailChimp Form */
@@ -213,6 +209,7 @@ section {
   text-align: center;
   display: block;
   margin: 10px 0;
+  font-weight: bold;
 }
 
 #mc_embed_signup .button:hover {
