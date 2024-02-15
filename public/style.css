@@ -24,7 +24,7 @@ header nav ul {
 
 header nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin: 0px 50px;
 }
 
 header nav ul li a {
@@ -42,43 +42,57 @@ header nav ul li a:hover {
   width: auto;
 }
 
+/* Styling the dropdown link */
 nav ul li.dropdown>a {
   color: #c5050c;
   font-weight: bold;
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 5px;
 }
 
+/* Dropdown container holds the dropdown items */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
+/* Dropdown content styling */
 .dropdown-content {
-  display: none;
+  display: none; /* Dropdown options hidden by default */
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #d24747;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+  top: 120%;
 }
 
+/* Dropdown item styling */
 .dropdown-content a {
-  color: #c5050c;
+  color: #fff;
   padding: 12px;
-  text-decoration: none;
   display: block;
-  font-weight: normal;
 }
 
+/* Dropdown item hover effect */
 .dropdown-content a:hover {
-  background-color: #f1f1f1;
+  background-color: #e57373;
+  color: #fff;
 }
 
+/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+  color: #c5050c;
 }
 
+/* Change the dropdown link style on hover */
 .dropdown:hover>a {
-  text-decoration: underline;
+  background-color: #d24747;
+  color: #fff;
 }
 
 .join-btn {
