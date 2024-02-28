@@ -190,6 +190,54 @@ nav ul li a:hover,
   transition: transform 0.3s ease-in-out;
 }
 
+.company-logos {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 20px 0;
+  background-color: #f5f5f5;
+}
+
+.company-logos__heading {
+  width: 100%;
+  text-align: center;
+  font-size: 1em;
+  color: #707070;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.company-logos__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.company-logos__slider {
+  display: inline-flex;
+  animation: scroll-logos 10s linear infinite;
+}
+
+.company-logo {
+  height: 50px;
+  width: auto;
+  margin: 0 15px;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.company-logo:hover {
+  opacity: 1;
+}
+
+@keyframes scroll-logos {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* About Us Specific Styles */
 .about-us .text-container,
 .contact-us .text-container,
@@ -438,6 +486,14 @@ footer a:hover {
   .image-container img {
     max-width: 100%;
     height: auto;
+  }
+
+  .company-logos__heading {
+    font-size: 0.75em;
+  }
+
+  .company-logo {
+    margin: 0 10px;
   }
 
   .events-calendar iframe {
