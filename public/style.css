@@ -10,10 +10,20 @@ body {
 /* Header */
 header {
   background-color: white;
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+}
+
+body {
+  padding-top: 70px;
 }
 
 header nav ul {
@@ -121,7 +131,7 @@ nav ul li.dropdown>a {
 
 /* Sections */
 section {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,7 +250,11 @@ nav ul li a:hover,
   }
 }
 
-/* About Us Specific Styles */
+.events-calendar {
+  padding-top: 30px;
+}
+
+/* About Specific Styles */
 .about-us .text-container,
 .contact-us .text-container,
 .join-national .text-container {
@@ -433,6 +447,10 @@ footer a:hover {
 @media (max-width: 768px) {
   .logo {
     height: 40px;
+  }
+
+  body {
+    padding-top: 60px;
   }
 
   header nav ul {
