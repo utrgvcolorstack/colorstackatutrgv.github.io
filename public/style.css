@@ -1,13 +1,32 @@
-/* Basic Resets */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
+
+:root {
+  --primary-color: #c5050c;
+  --primary-hover-color: #e57373;
+  --dropdown-color: #d24747;
+  --discord-color: #7289da;
+  --discord-hover-color: #8a9fe9;
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: white;
 }
 
-/* Header */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+header nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
 header {
   background-color: white;
   padding: 10px 0;
@@ -39,7 +58,7 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #c5050c;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -52,27 +71,24 @@ header nav ul li a:hover {
   width: auto;
 }
 
-/* Styling the dropdown link */
 nav ul li.dropdown>a {
-  color: #c5050c;
+  color: var(--primary-color);
   font-weight: bold;
   background-color: transparent;
   padding: 12px;
   border-radius: 5px;
 }
 
-/* Dropdown container holds the dropdown items */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Dropdown content styling */
 .dropdown-content {
   display: none;
   /* Dropdown options hidden by default */
   position: absolute;
-  background-color: #d24747;
+  background-color: var(--dropdown-color);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -81,33 +97,29 @@ nav ul li.dropdown>a {
   top: 120%;
 }
 
-/* Dropdown item styling */
 .dropdown-content a {
-  color: #fff;
+  color: white;
   padding: 12px;
   display: block;
 }
 
-/* Dropdown item hover effect */
 .dropdown-content a:hover {
-  background-color: #e57373;
-  color: #fff;
+  background-color: var(--primary-hover-color);
+  color: white;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
-  color: #c5050c;
+  color: var(--primary-color);
 }
 
-/* Change the dropdown link style on hover */
 .dropdown:hover>a {
-  background-color: #d24747;
-  color: #fff;
+  background-color: var(--dropdown-color);
+  color: white;
 }
 
 .join-btn {
-  background-color: #c5050c;
+  background-color: var(--primary-color);
   color: white;
   padding: 8px 20px;
   text-decoration: none;
@@ -116,20 +128,19 @@ nav ul li.dropdown>a {
 }
 
 .join-btn:hover {
-  background-color: #e57373;
+  background-color: var(--primary-hover-color);
   color: white;
 }
 
 .intro {
   text-align: center;
-  background-color: #c5050c;
+  background-color: var(--primary-color);
   color: white;
   padding: 20px;
   font-size: 1.25em;
   font-weight: bold;
 }
 
-/* Sections */
 section {
   padding: 10px;
   display: flex;
@@ -161,7 +172,7 @@ section {
 
 .text-container h2 {
   font-size: 2.5em;
-  color: #c5050c;
+  color: var(--primary-color);
   font-weight: bold;
   text-align: center;
 }
@@ -177,7 +188,7 @@ section {
 
 .btn-member {
   display: inline-block;
-  background-color: #c5050c;
+  background-color: var(--primary-color);
   color: white;
   padding: 10px 20px;
   margin: 20px 0px;
@@ -188,8 +199,16 @@ section {
 }
 
 .btn-member:hover {
-  background-color: #e57373;
-  color: #ffffff;
+  background-color: var(--primary-hover-color);
+  color: white;
+}
+
+#discord-button {
+  background-color: var(--discord-color);
+}
+
+#discord-button:hover {
+  background: var(--discord-hover-color);
 }
 
 .btn-member:hover,
@@ -265,7 +284,7 @@ nav ul li a:hover,
 .about-us h2,
 .contact-us h2,
 .join-national h2 {
-  color: #c5050c;
+  color: var(--primary-color);
 }
 
 .about-us p,
@@ -287,7 +306,7 @@ nav ul li a:hover,
 
 /* MailChimp Form */
 #mc_embed_signup {
-  background: #fff;
+  background: white;
   font: 14px Helvetica, Arial, sans-serif;
   margin: 0 auto;
   max-width: 600px;
@@ -295,7 +314,7 @@ nav ul li a:hover,
 }
 
 #mc_embed_signup h2 {
-  color: #c5050c;
+  color: var(--primary-color);
   text-align: left;
   margin-bottom: 20px;
 }
@@ -319,7 +338,7 @@ nav ul li a:hover,
 }
 
 #mc_embed_signup .button {
-  background-color: #c5050c;
+  background-color: var(--primary-color);
   color: white;
   border: none;
   border-radius: 5px;
@@ -331,7 +350,7 @@ nav ul li a:hover,
 }
 
 #mc_embed_signup .button:hover {
-  background-color: #e57373;
+  background-color: var(--primary-hover-color);
   cursor: pointer;
 }
 
@@ -360,42 +379,35 @@ nav ul li a:hover,
 }
 
 .membership-form {
-  padding: 20px;
   text-align: center;
   display: block;
 }
 
 .membership-form h2 {
   margin-bottom: 20px;
-  color: #c5050c;
+  color: var(--primary-color);
   font-size: 2em;
 }
 
-/* Footer */
 footer {
   color: #333;
   padding: 20px 0;
   text-align: center;
 }
 
-.social-media {
-  padding-bottom: 10px;
-}
-
 .social-media a {
   margin: 10px;
   font-size: 40px;
-  color: black;
   transition: color 0.3s;
   text-decoration: none;
 }
 
 #discord-icon {
-  color: #7289da;
+  color: var(--discord-color);
 }
 
 #discord-icon:hover {
-  color: #8a9fe9;
+  color: var(--discord-hover-color);
 }
 
 #github-icon {
@@ -443,7 +455,6 @@ footer a:hover {
   color: #6ea1f4;
 }
 
-/* Adjustments for smaller screens */
 @media (max-width: 768px) {
   .logo {
     height: 40px;
@@ -482,7 +493,6 @@ footer a:hover {
     font-size: 10.75px;
   }
 
-  /* Adjust text size for smaller screens */
   .text-container h2 {
     font-size: 2em;
   }
@@ -491,12 +501,10 @@ footer a:hover {
     font-size: 1em;
   }
 
-  /* Stack sections vertically on smaller screens */
   section {
     flex-direction: column;
   }
 
-  /* Adjust image and text container layouts */
   .image-container,
   .text-container {
     width: 100%;
@@ -518,6 +526,6 @@ footer a:hover {
 
   .events-calendar iframe {
     width: 100%;
-    height: 400px;
+    height: 500px;
   }
 }
