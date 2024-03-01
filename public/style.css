@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@600&family=Roboto:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@600&family=Roboto:wght@400&display=swap");
 
 :root {
   --primary-color: #c5050c;
@@ -12,19 +12,24 @@ html,
 body {
   height: 100%;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    color: var(--primary-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--primary-color);
 }
 
 header nav ul li a {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
 
 header {
@@ -306,21 +311,9 @@ nav ul li a:hover,
 
 /* MailChimp Form */
 #mc_embed_signup {
-  background: white;
-  font: 14px Helvetica, Arial, sans-serif;
   margin: 0 auto;
   max-width: 600px;
   padding: 20px;
-}
-
-#mc_embed_signup h2 {
-  color: var(--primary-color);
-  text-align: left;
-  margin-bottom: 20px;
-}
-
-#mc_embed_signup .mc-field-group {
-  margin: 0;
 }
 
 #mc_embed_signup .mc-field-group label {
@@ -345,7 +338,6 @@ nav ul li a:hover,
   padding: 10px 20px;
   text-align: center;
   display: block;
-  margin: 10px 0;
   font-weight: bold;
 }
 
@@ -364,29 +356,9 @@ nav ul li a:hover,
   box-sizing: border-box;
 }
 
-/* Responsiveness */
-@media (max-width: 600px) {
-
-  #mc_embed_signup .mc-field-group,
-  #mc_embed_signup .mc-field-group label,
-  #mc_embed_signup .mc-field-group input {
-    display: block;
-  }
-
-  #mc_embed_signup .mc-field-group label {
-    margin-bottom: 5px;
-  }
-}
-
 .membership-form {
   text-align: center;
   display: block;
-}
-
-.membership-form h2 {
-  margin-bottom: 20px;
-  color: var(--primary-color);
-  font-size: 2em;
 }
 
 footer {
