@@ -49,11 +49,9 @@
     </p>
   </section>
 
-  <section class="what-we-do">
+  <section class="home">
     <div class="text-container">
-      <h2>What We Do</h2>
-    </div>
-    <div class="text-container">
+      <h4>What We Do</h4>
       <p>
         ColorStack's mission is to increase the number of Black, Latinx, and
         Indigenous technologists who graduate and go on to start rewarding
@@ -62,44 +60,55 @@
     </div>
   </section>
 
-  <section class="community">
-    <div class="image-container">
-      <img src="assets/2022_Tapia.jpg" alt="ColorStack at the 2022 TAPIA Conference" />
+  <div class="involvement-bar">
+    <span>Get involved with ColorStack 👉</span>
+    <div>
+      <a href="https://discord.com/invite/ty688j9ezh" target="_blank" class="btn-member" id="discord-button">
+        <i class="fa-brands fa-discord"></i>
+        Discord</a>
     </div>
-    <div class="text-container">
-      <h2>Community</h2>
-      <p>
-        Get career advice and find internship opportunities in our Discord.
-      </p>
-      <p>Find your support system in college and beyond.</p>
-      <p>
-        Experience a safe space for Black, Latinx, and Indigenous students.
-      </p>
-      <div class="centered-button-container">
-        <a href="https://discord.com/invite/ty688j9ezh" target="_blank" class="btn-member" id="discord-button">
-          <i class="fa-brands fa-discord"></i>
-          Discord</a>
+  </div>
+
+  <section class="community">
+    <div class="carousel">
+      <div class="carousel-images">
+        <img src="assets/2022_Tapia.jpg" alt="ColorStack at 2022 Tapia Conference" />
+        <img src="assets/Fireside_Chat_with_Jehron.jpg" alt="Visit from ColorStack CEO & Founder Jehron Petty" />
+        <img src="assets/ColorStack_with_Epic_Systems.jpg" alt="ColorStack with Epic Systems" />
+        <img src="assets/Spaulding_Ridge_Event.jpg" alt="ColorStack with Spaulding Ridge" />
+        <img src="assets/Sentry_Event.jpg" alt="ColorStack with Sentry" />
+        <img src="assets/ColorStack_x_WACM_Study_Jam.jpg" alt="ColorStack Study Jam in collaboration with WACM" />
       </div>
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
   </section>
 
-  <section class="events">
-    <div class="image-container">
-      <img src="assets/ColorStack_with_Epic_Systems.jpg" alt="ColorStack with Epic Systems" />
-    </div>
+  <section class="home">
     <div class="text-container">
-      <h2>Events</h2>
-      <p>
-        Attend weekly workshops with companies and learn how to stand out as a
-        candidate.
-      </p>
-      <p>Meet new friends at our social events.</p>
-      <p>Speak with recruiters and engineers in the industry.</p>
-      <div class="centered-button-container">
-        <a href="events.html" class="btn-member">
-          <i class="fa-solid fa-calendar-days"></i>
-          View Events</a>
-      </div>
+      <h4>Opportunities For You</h4>
+      <ul class="custom-bullets">
+        <li>
+          <p>
+            Find internship, co-op, and scholarship opportunities posted in
+            our Discord
+          </p>
+        </li>
+        <li>
+          <p>Get career advice and learn how to stand out when recruiting</p>
+        </li>
+        <li>
+          <p>
+            Speak with recruiters and engineers at our company-led workshops
+          </p>
+        </li>
+        <li>
+          <p>
+            Meet new friends and find your support system in college and
+            beyond
+          </p>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -152,6 +161,40 @@
   </footer>
 
   <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    let autoSlideInterval;
+
+    function initAutoSlide() {
+      clearInterval(autoSlideInterval);
+      autoSlideInterval = setInterval(function () {
+        changeSlide(1);
+      }, 4000); // Set up automatic rotation
+    }
+
+    function changeSlide(n) {
+      showSlides((slideIndex += n));
+      initAutoSlide();
+    }
+
+    function showSlides(n) {
+      let slides = document
+        .getElementsByClassName("carousel-images")[0]
+        .getElementsByTagName("img");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    initAutoSlide();
+
     document.getElementById("current-year").textContent =
       new Date().getFullYear();
   </script>
