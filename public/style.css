@@ -4,6 +4,8 @@
   --primary-color: #c5050c;
   --primary-hover-color: #e57373;
   --dropdown-color: #d24747;
+  --link-color: #3b82f6;
+  --link-hover-color: #6ea1f4;
   --discord-color: #7289da;
   --discord-hover-color: #8a9fe9;
 }
@@ -357,15 +359,24 @@ ul.custom-bullets li::before {
   line-height: 1.5;
 }
 
+.member-spotlights ul li a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.member-spotlights ul li a:hover {
+  color: var(--link-hover-color);
+}
+
 .contact-us a,
 .join-national a {
-  color: #3b82f6;
+  color: var(--link-color);
   text-decoration: underline;
 }
 
 .contact-us a:hover,
 .join-national a:hover {
-  color: #6ea1f4;
+  color: var(--link-hover-color);
 }
 
 /* MailChimp Form */
@@ -478,12 +489,12 @@ footer p {
 }
 
 footer a {
-  color: #3b82f6;
+  color: var(--link-color);
   text-decoration: none;
 }
 
 footer a:hover {
-  color: #6ea1f4;
+  color: var(--link-hover-color);
 }
 
 @media (max-width: 768px) {
