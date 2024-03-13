@@ -5,6 +5,9 @@
 
 This repository contains the source files for the ColorStack at UW-Madison website, hosted at [colorstack.cs.wisc.edu](https://colorstack.cs.wisc.edu/).
 
+> [!NOTE]
+> The following information is primarily intended for internal use by ColorStack at UW-Madison. Please be aware that your site may be deployed in a different manner than ours.
+
 ## Editing The Site
 
 To make changes to the website, place your files in the `public` folder within this Git repository.
