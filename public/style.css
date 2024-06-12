@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@600&family=Roboto:wght@400&display=swap");
 
 :root {
-  --primary-color: #c5050c;
+  --primary-color: #c50525;
   --primary-hover-color: #e57373;
   --dropdown-color: #d24747;
   --link-color: #3b82f6;
@@ -78,6 +78,12 @@ header nav ul li a:hover {
   width: auto;
 }
 
+#nav-resources{
+  padding-left: 12px;
+}
+#nav-events{
+  padding-left: 12px;
+}
 nav ul li.dropdown>a {
   color: var(--primary-color);
   font-weight: bold;
