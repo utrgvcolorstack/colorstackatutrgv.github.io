@@ -18,6 +18,81 @@ body {
   background-color: white;
 }
 
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card{
+  background-color: #c50525;
+  padding: 70px 50px 0px 50px;
+  max-width: 350px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.profile-pic{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.profile-pic img{
+  width: 100%;
+  height: 100%;
+}
+.content{
+  text-align: center;
+}
+.content h3{
+  font-size: 1.4rem;
+  margin-top: 25px;
+  color: #f5f5f5;
+
+}
+
+.content p{
+  letter-spacing: 1px;
+  margin: 0;
+  color: #f5f5f5;
+  opacity: 0.85;
+}
+
+.social-media{
+  margin-top: 0px;
+}
+.social-media i{
+  
+  opacity: 0.95;
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #f5f5f5;
+}
+.social-media i:hover{
+  background-color: #d24747;
+  color:#ccc
+}
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline-start: 30px;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.table{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
 h1,
 h2,
 h3,
@@ -60,7 +135,7 @@ header nav ul {
 
 header nav ul li {
   display: inline;
-  margin: 0px 50px;
+  margin: 0px 25px;
 }
 
 header nav ul li a {
