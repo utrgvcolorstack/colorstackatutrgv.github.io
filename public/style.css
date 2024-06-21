@@ -427,7 +427,9 @@ ul.custom-bullets li::before {
 
 .home .text-container,
 .about-us .text-container,
+.e-board .text-container,
 .contact-us .text-container,
+.resources .text-container,
 .join-national .text-container {
   max-width: 900px;
   margin: auto;
