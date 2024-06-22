@@ -77,12 +77,14 @@ body {
 .wrapper{
   display: flex;
   justify-content: center;
+  
   align-items: center;
   padding-inline-start: 30px;
 }
 
 .container{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
