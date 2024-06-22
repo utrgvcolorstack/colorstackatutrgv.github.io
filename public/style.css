@@ -74,10 +74,10 @@ body {
   background-color: #d24747;
   color:#ccc
 }
-.wrapper{
+.e-board_cards{
   display: flex;
   justify-content: center;
-  
+  flex-wrap: wrap;
   align-items: center;
   padding-inline-start: 30px;
 }
