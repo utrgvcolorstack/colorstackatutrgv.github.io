@@ -28,6 +28,7 @@ body {
   background-color: #c50525;
   padding: 70px 50px 0px 50px;
   max-width: 350px;
+  min-width: 275px;
   margin: 10px;
   border-radius: 10px;
 }
@@ -60,9 +61,7 @@ body {
   opacity: 0.85;
 }
 
-.social-media{
-  margin-top: 0px;
-}
+
 .social-media i{
   
   opacity: 0.95;
@@ -74,12 +73,13 @@ body {
   background-color: #d24747;
   color:#ccc
 }
-.e-board_cards{
+
+.wrapper{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  padding-inline-start: 30px;
+  
 }
 
 .container{
