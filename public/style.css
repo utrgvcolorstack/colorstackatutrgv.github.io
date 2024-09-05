@@ -363,6 +363,18 @@ ul.custom-bullets li {
   position: relative;
   padding-left: 20px;
 }
+.sponsor-logos{
+  width: 10%;
+  height: auto;
+}
+
+.sponsor-container{
+  display: flex;
+  justify-content: center;
+}
+.sponsor-msg{
+  padding-top: 16px;
+}
 
 ul.custom-bullets li::before {
   content: "•";
