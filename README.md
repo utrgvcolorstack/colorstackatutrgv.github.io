@@ -1,7 +1,9 @@
 # colorstack.cs.wisc.edu
 
+[![Discord](https://img.shields.io/badge/ColorStack%20@%20UW--Madison-7289DA?style=for-the-badge&logo=discord&logoColor=white&style=flat-square)](https://discord.com/invite/ty688j9ezh)
 [![LinkedIn](https://img.shields.io/badge/ColorStack%20at%20UW--Madison-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/company/colorstack-at-uw-madison)
 [![Instagram](https://img.shields.io/badge/colorstackatuw-E4405F?style=for-the-badge&logo=instagram&logoColor=white&style=flat-square)](https://instagram.com/colorstackatuw)
+[![Linktree](https://img.shields.io/badge/colorstackatuw-39E09B?style=for-the-badge&logo=linktree&logoColor=white&style=flat-square)](https://linktr.ee/colorstackatuw)
 
 This repository contains the source files for the ColorStack at UW-Madison website, hosted at [colorstack.cs.wisc.edu](https://colorstack.cs.wisc.edu/).
 
