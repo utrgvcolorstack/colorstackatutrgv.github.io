@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&family=Poppins:wght@600&family=Roboto:wght@400&display=swap");
 
 :root {
-  --primary-color: #c50525;
-  --primary-hover-color: #e57373;
-  --dropdown-color: #d24747;
+  --primary-color: #FF3F00;
+  --primary-hover-color: #F89813;
+  --dropdown-color: #F89813;
   --link-color: #3b82f6;
   --link-hover-color: #6ea1f4;
   --discord-color: #7289da;
@@ -25,7 +25,7 @@ body {
 }
 
 .card{
-  background-color: #c50525;
+  background-color: #FF3F00;
   padding: 70px 50px 0px 50px;
   max-width: 350px;
   min-width: 275px;
@@ -70,7 +70,7 @@ body {
   color: #f5f5f5;
 }
 .social-media i:hover{
-  background-color: #d24747;
+  background-color: #F89813;
   color:#ccc
 }
 
