@@ -1,4 +1,4 @@
-# https://colorstackatutrgv-github-io.vercel.app/
+# colorstackatutrgv-github-io.vercel.app
 
 [![Discord](https://img.shields.io/badge/ColorStack%20@%20UW--Madison-7289DA?style=for-the-badge&logo=discord&logoColor=white&style=flat-square)](https://discord.gg/CSAPytsdNv)
 [![LinkedIn](https://img.shields.io/badge/ColorStack%20at%20UW--Madison-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&style=flat-square)](https://www.linkedin.com/company/colorstack-utrgv/)
